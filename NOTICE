@@ -1,0 +1,25 @@
+valkey-namespace
+Copyright (c) 2026 Valkey Community
+
+This project is a derivative work based on redis-namespace:
+https://github.com/resque/redis-namespace
+
+redis-namespace
+Copyright (c) 2009 Chris Wanstrath
+
+Both projects are licensed under the MIT License.
+
+The original redis-namespace implementation has been adapted to work with
+the Valkey database and the valkey-glide-ruby client library. The core
+architecture, command registry patterns, and namespacing logic are derived
+from redis-namespace.
+
+Key changes in valkey-namespace:
+- Adapted to work with Valkey instead of Redis
+- Uses valkey-glide-ruby client instead of redis-rb
+- Updated naming conventions (Redis → Valkey)
+- Updated environment variables (REDIS_NAMESPACE_* → VALKEY_NAMESPACE_*)
+- Added examples and additional documentation
+
+We are grateful to the redis-namespace project and its contributors for
+their excellent work that made this adaptation possible.
